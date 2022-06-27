@@ -11,6 +11,8 @@ namespace Day01
             PrintMessage();
             string callSign = GetMessage();
             PrintMessage(callSign);
+            Timestamp(ref callSign);
+            PrintMessage(callSign);
 
             Random rando = new Random();
             n1 = rando.Next(100);
@@ -20,6 +22,11 @@ namespace Day01
             //$ - C# interpolated string
             Console.WriteLine($"{n1} + {n2} = {result}");
             Console.WriteLine(DateTime.Now);
+        }
+
+        static void Timestamp(ref string message)
+        {
+            message = $"{DateTime.Now}: {message}";
         }
 
         static void GetSum(int num1, int num2, ref int sum)
