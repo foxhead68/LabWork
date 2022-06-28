@@ -43,7 +43,7 @@ namespace Day01
 
         static void PrintMessage()
         {
-            Console.WriteLine("Hello New User!");
+            Console.WriteLine("Hello New-User!");
         }
 
         static void PrintMessage(string message)
